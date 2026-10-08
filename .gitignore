@@ -1,0 +1,32 @@
+# Игнорируем ВСЁ по умолчанию
+*
+
+# Но разрешаем все папки для обхода
+!*/
+
+# Разрешаем основные файлы проекта
+!/.git*
+!/.gitattributes
+!/.gitignore
+!/*.uproject
+!/Config/**
+!/Source/**
+!/Plugins/**
+!/Content/**/*.uasset
+!/Content/**/*.umap
+
+# Временные и генерируемые папки (главное!)
+/Binaries/
+/Build/
+/Intermediate/
+/Saved/
+/DerivedDataCache/
+
+# Файлы IDE и ОС
+.vs/
+.idea/
+.vscode/
+*.VC.db
+*.VC.opendb
+.DS_Store
+Thumbs.db
